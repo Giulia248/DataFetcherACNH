@@ -11,6 +11,7 @@
 		CEC3F0C92865A24E007EDF40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3F0C82865A24E007EDF40 /* ContentView.swift */; };
 		CEC3F0CB2865A252007EDF40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC3F0CA2865A252007EDF40 /* Assets.xcassets */; };
 		CEC3F0CE2865A252007EDF40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC3F0CD2865A252007EDF40 /* Preview Assets.xcassets */; };
+		CEC3F0D92865AFCA007EDF40 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CEC3F0D82865AFCA007EDF40 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC3F0D92865AFCA007EDF40 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = DataFetcherACNH;
+			packageProductDependencies = (
+				CEC3F0D82865AFCA007EDF40 /* SwiftyJSON */,
+			);
 			productName = DataFetcherACNH;
 			productReference = CEC3F0C32865A24E007EDF40 /* DataFetcherACNH.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,10 @@
 				Base,
 			);
 			mainGroup = CEC3F0BA2865A24E007EDF40;
+			packageReferences = (
+				CEC3F0D42865A542007EDF40 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CEC3F0D72865AFCA007EDF40 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = CEC3F0C42865A24E007EDF40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +346,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEC3F0D42865A542007EDF40 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.9.1;
+			};
+		};
+		CEC3F0D72865AFCA007EDF40 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEC3F0D82865AFCA007EDF40 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEC3F0D72865AFCA007EDF40 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEC3F0BB2865A24E007EDF40 /* Project object */;
 }
